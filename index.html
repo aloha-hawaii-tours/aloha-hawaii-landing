@@ -9,45 +9,40 @@
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f4f4f4; line-height: 1.5; color: #333; }
   .container { max-width: 480px; margin: 0 auto; background: #fff; min-height: 100vh; }
   
-  /* Header */
   .header { background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%); padding: 20px; text-align: center; color: #fff; }
   .header h1 { font-size: 18px; text-transform: uppercase; letter-spacing: 1px; }
   
-  /* Urgency Bar */
   .urgency { background: #28a745; color: #fff; text-align: center; padding: 10px; font-size: 13px; font-weight: bold; }
   
-  /* Hero Image */
   .hero-img { width: 100%; height: 250px; object-fit: cover; display: block; }
   
-  /* Content */
   .content { padding: 25px 20px; }
-  .content h2 { font-size: 26px; color: #1a1a1a; margin-bottom: 15px; line-height: 1.2; }
+  .content h2 { font-size: 24px; color: #1a1a1a; margin-bottom: 15px; line-height: 1.2; }
   .content .subhead { color: #666; font-size: 16px; margin-bottom: 20px; }
   
-  /* Islands */
+  .webinar-details { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ff6b35; }
+  .webinar-details h4 { font-size: 14px; color: #ff6b35; margin-bottom: 10px; }
+  .webinar-details p { font-size: 14px; color: #333; margin: 0; line-height: 1.6; }
+  
   .islands { background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: center; }
   .islands p { font-size: 13px; color: #666; margin-bottom: 10px; }
   .islands .emoji { font-size: 28px; letter-spacing: 8px; }
   .islands p.locations { margin-top: 10px; font-size: 12px; color: #28a745; font-weight: bold; }
   
-  /* Includes Box */
   .includes { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 4px solid #28a745; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
   .includes h3 { font-size: 16px; margin-bottom: 12px; color: #1a1a1a; }
   .includes ul { list-style: none; }
   .includes li { padding: 8px 0; font-size: 14px; padding-left: 25px; position: relative; }
   .includes li:before { content: "✓"; position: absolute; left: 0; color: #28a745; font-weight: bold; font-size: 16px; }
   
-  /* Hotels */
   .hotels { background: #fff8e7; padding: 15px; border-radius: 8px; margin: 20px 0; }
   .hotels h4 { font-size: 14px; color: #d97706; margin-bottom: 10px; }
   .hotels p { font-size: 13px; color: #333; margin: 0; }
   
-  /* Bonus Box */
   .bonus { background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); border: 2px solid #28a745; padding: 20px; margin: 20px 0; border-radius: 8px; text-align: center; }
   .bonus h3 { color: #155724; font-size: 18px; margin-bottom: 8px; }
   .bonus p { color: #155724; font-size: 14px; margin: 0; }
   
-  /* CTA Section */
   .cta { padding: 0 20px 20px; }
   .btn { display: block; width: 100%; padding: 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: bold; font-size: 18px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
   .btn-primary { background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%); color: #fff; }
@@ -55,28 +50,25 @@
   .btn-note { text-align: center; color: #666; font-size: 13px; margin-top: -10px; margin-bottom: 20px; }
   .btn-warning { text-align: center; color: #856404; font-size: 12px; background: #fff3cd; padding: 10px; border-radius: 6px; margin-top: -5px; margin-bottom: 20px; border: 1px solid #ffc107; }
   
-  /* Zoom Details Box */
-  .zoom-details { background: #f8f9fa; border: 2px solid #0066cc; padding: 20px; margin: 0 20px 20px; border-radius: 8px; }
-  .zoom-details h4 { color: #0066cc; margin-bottom: 15px; font-size: 16px; text-align: center; }
-  .zoom-row { display: flex; align-items: flex-start; margin-bottom: 15px; }
-  .zoom-row:last-child { margin-bottom: 0; }
-  .zoom-icon { font-size: 20px; margin-right: 12px; width: 30px; text-align: center; }
-  .zoom-content { flex: 1; }
-  .zoom-content p.label { font-size: 12px; color: #666; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 1px; }
-  .zoom-content p.value { font-size: 14px; color: #1a1a1a; font-weight: bold; word-break: break-all; }
-  .zoom-content a { color: #0066cc; text-decoration: underline; }
-  .passcode-big { font-family: 'Courier New', monospace; font-size: 22px; color: #0066cc; letter-spacing: 3px; }
+  .zoom-details { background: #f0fdf4; border: 2px solid #28a745; padding: 20px; margin: 0 20px 20px; border-radius: 8px; }
+  .zoom-details h4 { color: #28a745; margin-bottom: 15px; font-size: 16px; text-align: center; }
   
-  /* Trust */
+  .zoom-option { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #86efac; }
+  .zoom-option:last-child { margin-bottom: 0; }
+  .zoom-option h5 { color: #166534; font-size: 14px; margin-bottom: 10px; }
+  .zoom-option ol { margin: 0; padding-left: 20px; }
+  .zoom-option li { font-size: 13px; color: #333; margin-bottom: 6px; line-height: 1.4; }
+  .zoom-option li:last-child { margin-bottom: 0; }
+  .zoom-option a { color: #0066cc; text-decoration: underline; word-break: break-all; }
+  .zoom-option .code { font-family: 'Courier New', monospace; font-weight: bold; color: #28a745; }
+  
   .trust { padding: 20px; text-align: center; border-top: 1px solid #eee; }
   .trust p { font-size: 12px; color: #999; line-height: 1.8; }
   
-  /* Footer */
   .footer { background: #1a1a1a; color: #fff; padding: 25px 20px; text-align: center; }
   .footer p { font-size: 18px; margin-bottom: 5px; }
   .footer a { color: #60a5fa; text-decoration: none; font-size: 14px; }
   
-  /* Pulse */
   @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.03); }
@@ -92,13 +84,18 @@
     <h1>Aloha Hawaii Tours and Travel</h1>
   </div>
   
-  <div class="urgency">🔥 Only 12 Hawaii Vouchers Left This Week</div>
+  <div class="urgency">🔥 Spots Are Filling Fast - Join Today</div>
   
   <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Hawaii Beach" class="hero-img">
   
   <div class="content">
-    <h2>Watch 45 Minutes.<br>Escape to Paradise for 6 Days.</h2>
+    <h2>Watch Our 45-Minute Zoom Travel Presentation and Receive a 6-Day/5-Night Hawaii Hotel Certificate for 2!</h2>
     <p class="subhead">Join our private travel webinar. <strong>No timeshare. No membership obligation. No fee to attend.</strong> You receive your Hawaii hotel voucher just by completing the session as a token of appreciation.</p>
+    
+    <div class="webinar-details">
+      <h4>🎥 What You'll Learn in This Session:</h4>
+      <p>We demonstrate how you can book cruises and hotels using our exclusive travel platform with <strong>zero markups</strong>. See exactly how our members access wholesale prices and save hundreds on every trip. No gimmicks, just real savings.</p>
+    </div>
     
     <div class="islands">
       <p>Choose Your Island Paradise</p>
@@ -137,32 +134,29 @@
     <p class="btn-warning">⚠️ Please refer to "Reserve Your Spot" above to check schedule before joining</p>
   </div>
   
-  <!-- Zoom Details -->
   <div class="zoom-details">
-    <h4>🌐 Zoom Access Details</h4>
+    <h4>🌐 How to Join Your Zoom Session</h4>
     
-    <div class="zoom-row">
-      <div class="zoom-icon">🌐</div>
-      <div class="zoom-content">
-        <p class="label">Meeting Link</p>
-        <p class="value"><a href="https://zoom.us/j/8088001202">https://zoom.us/j/8088001202</a></p>
-      </div>
+    <div class="zoom-option">
+      <h5>📱 If You Don't Have Zoom Installed:</h5>
+      <ol>
+        <li>Click on the meeting link (<a href="https://zoom.us/j/8088001202">https://zoom.us/j/8088001202</a>)</li>
+        <li>Select <strong>"Join from your browser"</strong></li>
+        <li>Click <strong>"Use Microphone & Camera"</strong></li>
+        <li>Enter the meeting code <span class="code">(8088 0012 02)</span> / Passcode <span class="code">(8080)</span> & your Name</li>
+        <li>Click <strong>JOIN</strong> & wait for the host to let you in</li>
+      </ol>
     </div>
     
-    <div class="zoom-row">
-      <div class="zoom-icon">🔒</div>
-      <div class="zoom-content">
-        <p class="label">Passcode</p>
-        <p class="value passcode-big">8080</p>
-      </div>
-    </div>
-    
-    <div class="zoom-row">
-      <div class="zoom-icon">🆔</div>
-      <div class="zoom-content">
-        <p class="label">Meeting ID</p>
-        <p class="value passcode-big">8088 0012 02</p>
-      </div>
+    <div class="zoom-option">
+      <h5>💻 If Zoom Is Installed on Your Device:</h5>
+      <ol>
+        <li>Launch Zoom</li>
+        <li>Click <strong>JOIN</strong></li>
+        <li>Enter Meeting ID <span class="code">(8088 0012 02)</span> & your name</li>
+        <li>Click <strong>Join</strong></li>
+        <li>Enter Passcode <span class="code">(8080)</span> when prompted</li>
+      </ol>
     </div>
   </div>
   
