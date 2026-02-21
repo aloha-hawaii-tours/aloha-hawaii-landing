@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Your 6-Day Hawaii Stay Awaits - Aloha Hawaii Tours and Travel</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f4f4f4; line-height: 1.5; color: #333; }
+  .container { max-width: 480px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  
+  /* Header */
+  .header { background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%); padding: 20px; text-align: center; color: #fff; }
+  .header h1 { font-size: 18px; text-transform: uppercase; letter-spacing: 1px; }
+  
+  /* Urgency Bar */
+  .urgency { background: #28a745; color: #fff; text-align: center; padding: 10px; font-size: 13px; font-weight: bold; }
+  
+  /* Hero Image */
+  .hero-img { width: 100%; height: 250px; object-fit: cover; display: block; }
+  
+  /* Content */
+  .content { padding: 25px 20px; }
+  .content h2 { font-size: 26px; color: #1a1a1a; margin-bottom: 15px; line-height: 1.2; }
+  .content .subhead { color: #666; font-size: 16px; margin-bottom: 20px; }
+  
+  /* Islands */
+  .islands { background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: center; }
+  .islands p { font-size: 13px; color: #666; margin-bottom: 10px; }
+  .islands .emoji { font-size: 28px; letter-spacing: 8px; }
+  .islands p.locations { margin-top: 10px; font-size: 12px; color: #28a745; font-weight: bold; }
+  
+  /* Includes Box */
+  .includes { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 4px solid #28a745; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+  .includes h3 { font-size: 16px; margin-bottom: 12px; color: #1a1a1a; }
+  .includes ul { list-style: none; }
+  .includes li { padding: 8px 0; font-size: 14px; padding-left: 25px; position: relative; }
+  .includes li:before { content: "✓"; position: absolute; left: 0; color: #28a745; font-weight: bold; font-size: 16px; }
+  
+  /* Hotels */
+  .hotels { background: #fff8e7; padding: 15px; border-radius: 8px; margin: 20px 0; }
+  .hotels h4 { font-size: 14px; color: #d97706; margin-bottom: 10px; }
+  .hotels p { font-size: 13px; color: #333; margin: 0; }
+  
+  /* Bonus Box */
+  .bonus { background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); border: 2px solid #28a745; padding: 20px; margin: 20px 0; border-radius: 8px; text-align: center; }
+  .bonus h3 { color: #155724; font-size: 18px; margin-bottom: 8px; }
+  .bonus p { color: #155724; font-size: 14px; margin: 0; }
+  
+  /* CTA Section */
+  .cta { padding: 0 20px 20px; }
+  .btn { display: block; width: 100%; padding: 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: bold; font-size: 18px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+  .btn-primary { background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%); color: #fff; }
+  .btn-secondary { background: linear-gradient(135deg, #0066cc 0%, #003d7a 100%); color: #fff; font-size: 16px; }
+  .btn-note { text-align: center; color: #666; font-size: 13px; margin-top: -10px; margin-bottom: 20px; }
+  .btn-warning { text-align: center; color: #856404; font-size: 12px; background: #fff3cd; padding: 10px; border-radius: 6px; margin-top: -5px; margin-bottom: 20px; border: 1px solid #ffc107; }
+  
+  /* Zoom Details Box */
+  .zoom-details { background: #f8f9fa; border: 2px solid #0066cc; padding: 20px; margin: 0 20px 20px; border-radius: 8px; }
+  .zoom-details h4 { color: #0066cc; margin-bottom: 15px; font-size: 16px; text-align: center; }
+  .zoom-row { display: flex; align-items: flex-start; margin-bottom: 15px; }
+  .zoom-row:last-child { margin-bottom: 0; }
+  .zoom-icon { font-size: 20px; margin-right: 12px; width: 30px; text-align: center; }
+  .zoom-content { flex: 1; }
+  .zoom-content p.label { font-size: 12px; color: #666; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 1px; }
+  .zoom-content p.value { font-size: 14px; color: #1a1a1a; font-weight: bold; word-break: break-all; }
+  .zoom-content a { color: #0066cc; text-decoration: underline; }
+  .passcode-big { font-family: 'Courier New', monospace; font-size: 22px; color: #0066cc; letter-spacing: 3px; }
+  
+  /* Trust */
+  .trust { padding: 20px; text-align: center; border-top: 1px solid #eee; }
+  .trust p { font-size: 12px; color: #999; line-height: 1.8; }
+  
+  /* Footer */
+  .footer { background: #1a1a1a; color: #fff; padding: 25px 20px; text-align: center; }
+  .footer p { font-size: 18px; margin-bottom: 5px; }
+  .footer a { color: #60a5fa; text-decoration: none; font-size: 14px; }
+  
+  /* Pulse */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+  }
+  .pulse { animation: pulse 2s infinite; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>Aloha Hawaii Tours and Travel</h1>
+  </div>
+  
+  <div class="urgency">🔥 Only 12 Hawaii Vouchers Left This Week</div>
+  
+  <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Hawaii Beach" class="hero-img">
+  
+  <div class="content">
+    <h2>Watch 45 Minutes.<br>Escape to Paradise for 6 Days.</h2>
+    <p class="subhead">Join our private travel webinar. <strong>No timeshare. No membership obligation. No fee to attend.</strong> You receive your Hawaii hotel voucher just by completing the session as a token of appreciation.</p>
+    
+    <div class="islands">
+      <p>Choose Your Island Paradise</p>
+      <div class="emoji">🏝️ 🌺 🏔️ 🌴</div>
+      <p class="locations">Maui • Oahu • Kauai • Big Island</p>
+    </div>
+    
+    <div class="includes">
+      <h3>Your 6-Day/5-Night Hawaii Stay Includes:</h3>
+      <ul>
+        <li>Premium hotel for 2 adults</li>
+        <li>Choose: Maui, Oahu, Kauai, or Big Island</li>
+        <li>Hilton, Marriott, Hyatt, Ritz-Carlton & more</li>
+        <li>18 months to use your certificate</li>
+        <li>Extra guests allowed (will be discussed during webinar)</li>
+        <li>Fully transferable</li>
+      </ul>
+    </div>
+    
+    <div class="hotels">
+      <h4>🏨 Premium Hotel Partners</h4>
+      <p>Hilton • Marriott • Hyatt • Ritz-Carlton • Wyndham • Accor • IHG • Starwood • Carlson</p>
+    </div>
+    
+    <div class="bonus">
+      <h3>💻 +$100 Rewards Voucher Bonus</h3>
+      <p>Join using a laptop, desktop, or tablet for the best viewing experience and receive an additional $100 Rewards Voucher on top of your Hawaii stay!</p>
+    </div>
+  </div>
+  
+  <div class="cta">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScl4yGIuQTlfE_vAJjFv_FEh8updma0BiN4fKYRoKAC5XZCxw/viewform?usp=header" class="btn btn-primary pulse">Reserve Your Spot</a>
+    <p class="btn-note">See available times & schedule</p>
+    
+    <a href="https://zoom.us/my/alohatravel?pwd=ckhzbFk5ZElBSjhxSDF1YkpVOGRCZz09" class="btn btn-secondary">Join Now</a>
+    <p class="btn-warning">⚠️ Please refer to "Reserve Your Spot" above to check schedule before joining</p>
+  </div>
+  
+  <!-- Zoom Details -->
+  <div class="zoom-details">
+    <h4>🌐 Zoom Access Details</h4>
+    
+    <div class="zoom-row">
+      <div class="zoom-icon">🌐</div>
+      <div class="zoom-content">
+        <p class="label">Meeting Link</p>
+        <p class="value"><a href="https://zoom.us/j/8088001202">https://zoom.us/j/8088001202</a></p>
+      </div>
+    </div>
+    
+    <div class="zoom-row">
+      <div class="zoom-icon">🔒</div>
+      <div class="zoom-content">
+        <p class="label">Passcode</p>
+        <p class="value passcode-big">8080</p>
+      </div>
+    </div>
+    
+    <div class="zoom-row">
+      <div class="zoom-icon">🆔</div>
+      <div class="zoom-content">
+        <p class="label">Meeting ID</p>
+        <p class="value passcode-big">8088 0012 02</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="trust">
+    <p>✓ 100% Not a Timeshare<br>✓ Fully Transferable<br>✓ Voucher Emailed After Session</p>
+  </div>
+  
+  <div class="footer">
+    <p>📞 (808) 736-4742</p>
+    <a href="https://www.alohahawaiitours.com/">www.alohahawaiitours.com</a>
+  </div>
+
+</div>
+
+</body>
+</html>
